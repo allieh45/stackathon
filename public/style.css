@@ -1,5 +1,6 @@
 body {
   font-family: sans-serif;
+  background-color: black;
 }
 
 a {
@@ -13,9 +14,20 @@ label {
 nav a {
   display: inline-block;
   margin: 1em;
+  color: lightgray;
 }
 
 form div {
   margin: 1em;
   display: inline-block;
+}
+
+.nav-bar {
+  color: lightgray;
+  text-align: center;
+}
+
+.home-page {
+  color: lightgray;
+  text-align: center;
 }
