@@ -6,15 +6,6 @@ export const AVAILABLE_INGREDIENTS = [
   'whiskey',
   'rum',
   'gin',
-  'lime juice',
-  'lemon juice',
-  'club soda',
-  'tonic water',
-  'simple syrup',
-  'bitters',
-  'orange liqueur',
-  'ginger beer',
-  'coke',
 ];
 
 //action types
