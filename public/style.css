@@ -31,3 +31,350 @@ form div {
   color: lightgray;
   text-align: center;
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  padding-top: 75px;
+  color: lightgray;
+}
+
+.row .all-products-inner {
+  padding-top: 15px;
+}
+
+.row .product-card {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  padding-top: 0px;
+}
+.row h1 {
+  text-align: center;
+}
+
+.row ul li {
+  list-style: none;
+  text-align: center;
+}
+
+.col-lg-4 .col-md-6 .col-sm-6 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 15rem;
+  height: 20rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.glass {
+  border: 1rem white solid;
+  border-radius: 0 0 1.5rem 1.5rem;
+  border-top: 0;
+  width: 15rem;
+  height: 18rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 2%;
+
+  &::before,
+  &::after {
+    border: 1rem white solid;
+    border-bottom: 0;
+    content: '';
+    height: 2rem;
+    position: absolute;
+    width: 2rem;
+    top: -2rem;
+  }
+
+  &::before {
+    border-left: 0;
+    border-radius: 0 2rem 0 0;
+    left: -2rem;
+  }
+
+  &::after {
+    border-right: 0;
+    border-radius: 2rem 0 0 0;
+    right: -2rem;
+  }
+}
+
+.juice {
+  border: 0.3rem solid magenta;
+  background-color: magenta;
+  border-radius: 0 0 0.5rem 0.5rem;
+  height: 75%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  &::before {
+    border: 0.3rem white solid;
+    content: '';
+    border-radius: 0 0 0.5rem 0;
+    border-left: 0;
+    border-top: 0;
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &::after {
+    background-color: white;
+    mix-blend-mode: color-dodge;
+    opacity: 50%;
+    bottom: -0.5rem;
+    content: '';
+    height: 120%;
+    left: -2.5rem;
+    position: absolute;
+    -webkit-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    transform: rotate(15deg);
+    width: 60%;
+  }
+}
+
+.pour-in {
+  width: 2rem;
+  height: 40rem;
+  background-color: magenta;
+  border-radius: 2rem;
+  position: absolute;
+  left: 70%;
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+  -webkit-transform: translate(0, -35rem);
+  -ms-transform: translate(0, -35rem);
+  transform: translate(0, -35rem);
+
+  &::before {
+    background-color: inherit;
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 5rem;
+    border-radius: 2rem;
+    top: -10rem;
+  }
+}
+
+.bubble {
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+  background-color: white;
+  mix-blend-mode: luminosity;
+  opacity: 25%;
+  position: absolute;
+  bottom: -10%;
+  left: -5%;
+
+  &:nth-of-type(2) {
+    left: 5%;
+  }
+  &:nth-of-type(3) {
+    left: 15%;
+  }
+  &:nth-of-type(4) {
+    left: 25%;
+  }
+  &:nth-of-type(5) {
+    left: 35%;
+  }
+  &:nth-of-type(6) {
+    left: 45%;
+  }
+  &:nth-of-type(7) {
+    left: 55%;
+  }
+  &:nth-of-type(8) {
+    left: 65%;
+  }
+  &:nth-of-type(9) {
+    left: 75%;
+  }
+  &:nth-of-type(10) {
+    left: 85%;
+  }
+  &:nth-of-type(11) {
+    left: 95%;
+  }
+  &:nth-of-type(12) {
+    left: 10%;
+  }
+  &:nth-of-type(13) {
+    left: 20%;
+  }
+  &:nth-of-type(14) {
+    left: 30%;
+  }
+  &:nth-of-type(15) {
+    left: 40%;
+  }
+  &:nth-of-type(16) {
+    left: 50%;
+  }
+  &:nth-of-type(17) {
+    left: 60%;
+  }
+  &:nth-of-type(18) {
+    left: 70%;
+  }
+  &:nth-of-type(19) {
+    left: 80%;
+  }
+  &:nth-of-type(20) {
+    left: 90%;
+  }
+  &:nth-of-type(21) {
+    left: 100%;
+  }
+}
+
+button {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  padding: 1rem;
+  width: 15rem;
+  background-color: transparent;
+  border: 0.5rem solid #027ff0;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  font-family: 'Fredoka One', cursive;
+  color: #027ff0;
+
+  &:hover {
+    background-color: #027ff0;
+    color: white;
+    cursor: pointer;
+  }
+
+  &:active {
+    -webkit-box-shadow: inset 0 0 1rem #0243d2;
+    box-shadow: inset 0 0 1rem #0243d2;
+    border-color: #024ced;
+  }
+
+  &:focus-visible {
+    outline: 4px solid black;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+}
+
+#drink {
+  display: none;
+}
+
+@media only screen and (max-width: 31.25em) {
+  .container {
+    width: 10rem;
+    height: 12rem;
+  }
+
+  .glass {
+    width: 10rem;
+    height: 12rem;
+    &::before,
+    &::after {
+      width: 1rem;
+    }
+    &::before {
+      left: -1rem;
+    }
+
+    &::after {
+      right: -1rem;
+    }
+  }
+
+  .pour-in {
+    width: 1rem;
+    border-radius: 1rem;
+
+    &::before {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+  button {
+    width: 10rem;
+    top: 70%;
+  }
+}
+
+@media only screen and (max-height: 31.25em) {
+  .container {
+    width: 10rem;
+    height: 12rem;
+  }
+
+  .glass {
+    width: 10rem;
+    height: 12rem;
+    &::before,
+    &::after {
+      width: 1rem;
+    }
+    &::before {
+      left: -1rem;
+    }
+
+    &::after {
+      right: -1rem;
+    }
+  }
+
+  .pour-in {
+    width: 1rem;
+    border-radius: 1rem;
+
+    &::before {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+  button {
+    width: 10rem;
+    top: 70%;
+  }
+}

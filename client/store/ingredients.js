@@ -20,7 +20,16 @@ export const pickIngredient = (ingredient) => {
   };
 };
 
-//do I need a thunk? maybe later??
+export const fetchIngredients = () => {
+  return (dispatch) => {
+    try {
+      dispatch(pickIngredient());
+      console.log('in thunk');
+    } catch (error) {
+      console.log(error);
+    }
+  };
+};
 
 const initialState = {
   selectedIngredient: AVAILABLE_INGREDIENTS[0],

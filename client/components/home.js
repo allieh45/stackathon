@@ -12,13 +12,20 @@ export class Home extends React.Component {
     super(props);
     console.log('props:', this.props);
     console.log('state:', this.state);
+    this.handleIngredientChange = this.handleIngredientChange.bind(this);
   }
 
-  handleIngredientChange(evt) {}
+  handleIngredientChange(evt) {
+    // this.setState({ [evt.target.name]: evt.target.value });
+    console.log('this:', this);
+    this.props.dispatch(pickIngredient(evt.target.value));
+    console.log('this:', this);
+    console.log('state:', this.state);
+  }
 
   render() {
     return (
-      <div class='home-page'>
+      <div className='home-page'>
         <h3>Ingredients</h3>
         <div>
           <IngredientSelector
@@ -38,5 +45,10 @@ const mapState = (state) => {
     ingredients: state.ingredients,
   };
 };
+// const mapDispatch=(dispatch)=>{
+//   return(
+
+//   )
+// }
 
 export default connect(mapState)(Home);
